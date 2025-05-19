@@ -1,5 +1,8 @@
 import string
 def clean_text(text):
+    if not isinstance(text, str):
+        text = str(text)
     text = text.lower()
-    text = text.translate(str.maketrans('','',string.punctuation))
+    # rest of your code
     return text
+
